@@ -1,9 +1,9 @@
 import Stripe from 'stripe';
 import  { json } from '@sveltejs/kit';
-import { STRIPE_APY_KEY, PRICE_ID } from '$env/static/private';
+import { STRIPE_API_KEY, PRICE_ID } from '$env/static/private';
 import { PUBLIC_FRONTEND_URL } from '$env/static/public';
 
-const stripe = new Stripe(STRIPE_APY_KEY);
+const stripe = new Stripe(STRIPE_API_KEY);
 
 export async function POST({ request }) {
   try {
