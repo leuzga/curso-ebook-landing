@@ -1,5 +1,6 @@
 import Stripe from 'stripe';
 import  { json } from '@sveltejs/kit';
+// @ts-ignore
 import { STRIPE_API_KEY, PRICE_ID } from '$env/static/private';
 import { PUBLIC_FRONTEND_URL } from '$env/static/public';
 
