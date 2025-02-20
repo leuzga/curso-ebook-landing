@@ -60,7 +60,7 @@
           class:selected-chapter-title={selectedChapterNumber === chapter.number} 
           aria-controls={`chapter-info-${chapter.number}`} 
           aria-expanded={selectedChapterNumber === chapter.number}
-          on:click={() => selectChapter(chapter)} >
+          onclick={() => selectChapter(chapter)} >
           <h4>Chapter {chapter.number}: {chapter.title}</h4>
         </button>
       </li>      
